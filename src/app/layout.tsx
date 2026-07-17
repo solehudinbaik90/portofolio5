@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import AosInit from "@/components/ui/AosInit";
-import "./globals.css";
+import "./global.css";
 import "./aos.css";
 
 const inter = Inter({
