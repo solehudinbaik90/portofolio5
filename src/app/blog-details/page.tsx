@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import SectionBadge from "@/components/ui/SectionBadge";
 import PostCard from "@/components/blog/PostCard";
 import type { Comment } from "@/types";
-import { posts } from "@/data/post";
+import { posts } from "@/data/posts";
 
 export const metadata: Metadata = {
   title: "Detail Artikel",
