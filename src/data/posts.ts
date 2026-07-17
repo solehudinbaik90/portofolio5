@@ -1,0 +1,58 @@
+import type { Post } from "@/types";
+
+export const posts: Post[] = [
+  {
+    id: 1,
+    category: "App Development",
+    title: "Semua yang Perlu Anda Ketahui Tentang Pembuatan Aplikasi",
+    excerpt: "SASS siap merevolusi cara bisnis beroperasi dengan platform perangkat lunak yang skalabel.",
+    image: "/assets/images/blog/blog-1.png",
+    date: "16 September 2025",
+    comments: 3,
+  },
+  {
+    id: 2,
+    category: "App Development",
+    title: "Semua yang Perlu Anda Ketahui Tentang Pembuatan Aplikasi",
+    excerpt: "SASS siap merevolusi cara bisnis beroperasi dengan platform perangkat lunak yang skalabel.",
+    image: "/assets/images/blog/blog-2.png",
+    date: "16 September 2025",
+    comments: 3,
+  },
+  {
+    id: 3,
+    category: "App Development",
+    title: "Semua yang Perlu Anda Ketahui Tentang Pembuatan Aplikasi",
+    excerpt: "SASS siap merevolusi cara bisnis beroperasi dengan platform perangkat lunak yang skalabel.",
+    image: "/assets/images/blog/blog-3.png",
+    date: "16 September 2025",
+    comments: 3,
+  },
+  {
+    id: 4,
+    category: "App Development",
+    title: "Semua yang Perlu Anda Ketahui Tentang Pembuatan Aplikasi",
+    excerpt: "SASS siap merevolusi cara bisnis beroperasi dengan platform perangkat lunak yang skalabel.",
+    image: "/assets/images/blog/blog-4.png",
+    date: "16 September 2025",
+    comments: 3,
+  },
+  {
+    id: 5,
+    category: "App Development",
+    title: "Semua yang Perlu Anda Ketahui Tentang Pembuatan Aplikasi",
+    excerpt: "SASS siap merevolusi cara bisnis beroperasi dengan platform perangkat lunak yang skalabel.",
+    image: "/assets/images/blog/blog-5.png",
+    date: "16 September 2025",
+    comments: 3,
+  },
+  {
+    id: 6,
+    category: "App Development",
+    title: "Semua yang Perlu Anda Ketahui Tentang Pembuatan Aplikasi",
+    excerpt: "SASS siap merevolusi cara bisnis beroperasi dengan platform perangkat lunak yang skalabel.",
+    image: "/assets/images/blog/blog-6.png",
+    date: "16 September 2025",
+    comments: 3,
+  },
+];

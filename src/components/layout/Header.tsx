@@ -1,0 +1,181 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import type { NavLink } from "@/types";
+
+const NAV_LINKS: NavLink[] = [
+  { label: "Beranda", href: "/" },
+  { label: "Profil", href: "/about" },
+  { label: "Proyek", href: "/portfolio" },
+  { label: "Layanan", href: "/service" },
+  { label: "Artikel", href: "/blog" },
+  { label: "Kontak", href: "/contact" },
+];
+
+const SOCIAL_LINKS = [
+  {
+    href: "https://www.facebook.com/soleh.muhamad",
+    label: "Facebook",
+    svgPath:
+      "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z",
+    viewBox: "0 0 320 512",
+  },
+  {
+    href: "https://www.instagram.com/msoleh19",
+    label: "Instagram",
+    svgPath:
+      "M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z",
+    viewBox: "0 0 448 512",
+  },
+];
+
+export default function Header() {
+  const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenu = () => setIsMenuOpen(false);
+  const openMenu = () => setIsMenuOpen(true);
+
+  return (
+    <header className="relative z-[99]">
+      <div className="container mx-auto pt-[30px]">
+        <div className="flex justify-between rounded-[10px] bg-card px-[15px] py-[30px] md:px-[30px]">
+          <div className="logo flex items-center">
+            <Link href="/">
+              <Image
+                src="/assets/images/logo.svg"
+                alt="MSoleh - Portofolio"
+                width={120}
+                height={40}
+              />
+            </Link>
+          </div>
+
+          <nav className="hidden items-center lg:flex" aria-label="Navigasi utama">
+            <ul className="flex gap-[40px]">
+              {NAV_LINKS.map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className={pathname === href ? "navActive" : "navNotActive"}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="flex items-center lg:hidden">
+            <button
+              onClick={openMenu}
+              aria-label="Buka menu navigasi"
+              className="rounded-full border border-[#919295] p-[10px]"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-[25px] w-[25px] fill-current text-text"
+                xmlns="[w3.org](http://www.w3.org/2000/svg)"
+                aria-hidden="true"
+              >
+                <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`sidebar fixed inset-0 z-[999] bg-btn/60 transition-all duration-500 ${
+          isMenuOpen ? "visible opacity-100" : "invisible opacity-0"
+        }`}
+        onClick={closeMenu}
+        aria-hidden={!isMenuOpen}
+      >
+        <div
+          className={`ml-auto h-full min-h-[750px] w-[300px] bg-card px-[30px] pt-[60px] transition-transform duration-500 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+
+          onClick={(e) => e.stopPropagation()}
+          role="dialog"
+          aria-label="Menu navigasi mobile"
+        >
+
+          <div className="relative flex justify-center">
+            <button
+              onClick={closeMenu}
+              aria-label="Tutup menu navigasi"
+              className="group absolute left-[-78px] rounded-lg bg-card px-[15px] py-[10px] text-[26px]"
+            >
+              <svg
+                viewBox="0 0 384 512"
+                className="h-[26px] w-[26px] fill-current text-white transition-all duration-500 group-hover:rotate-90 group-hover:text-theme"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+              </svg>
+            </button>
+            <Image
+              src="/assets/images/logo.svg"
+              alt="MSoleh"
+              width={100}
+              height={34}
+            />
+          </div>
+
+          <hr className="my-[30px] border-[#ddd]" />
+
+          {/* Navigasi Mobile */}
+          <nav aria-label="Navigasi mobile">
+            <ul className="grid gap-[14px]">
+              {NAV_LINKS.map(({ label, href }) => (
+                <li key={href} className="text-[18px] font-semibold">
+                  <Link
+                    href={href}
+                    className={pathname === href ? "navActive" : "navNotActive"}
+                    onClick={closeMenu}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <hr className="my-[30px] border-[#ddd]" />
+
+          <div className="mt-[40px]">
+            <p className="text-[20px] font-semibold text-white">Ikuti Saya:</p>
+            <div className="mt-[20px] flex gap-3">
+              {SOCIAL_LINKS.map(({ href, label, svgPath, viewBox }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                >
+                  <span className="boxShadow flex rounded-lg bg-btn p-[10px] text-text transition duration-300 hover:text-theme">
+                    <svg
+                      viewBox={viewBox}
+                      className="h-[18px] w-[18px] fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path d={svgPath} />
+                    </svg>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
