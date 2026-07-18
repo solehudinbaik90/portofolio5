@@ -38,9 +38,11 @@ const relatedPosts = posts.slice(0, 3);
 
 export default function BlogDetailsPage() {
   return (
-    <>
-      <Header />
-      <main className="relative z-[99]">
+    <div className="min-h-screen bg-[#252525]">
+      <div className="bg-img" aria-hidden="true" />
+      <div className="relative z-10">
+        <Header />
+        <main>
         <section className="py-[30px] md:py-[80px]">
           <div className="container mx-auto">
 
@@ -257,6 +259,7 @@ export default function BlogDetailsPage() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
+  </div>
   );
 }
