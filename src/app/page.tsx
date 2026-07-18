@@ -5,9 +5,7 @@ import Hero from "@/components/home/Hero";
 import ProfileImage from "@/components/home/ProfileImage";
 
 export const metadata: Metadata = {
-  title: {
-    absolute: "Beranda | MSoleh - Portofolio",
-  },
+  title: "Beranda",
   description: "Menampilkan Profil, CV, Resume, dan Proyek dari Muhamad Soleh.",
 };
 
