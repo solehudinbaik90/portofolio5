@@ -78,7 +78,7 @@ export default function Header() {
               <svg
                 viewBox="0 0 24 24"
                 className="h-[25px] w-[25px] fill-current text-text"
-                xmlns="[w3.org](http://www.w3.org/2000/svg)"
+                xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
                 <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" />
@@ -130,7 +130,6 @@ export default function Header() {
 
           <hr className="my-[30px] border-[#ddd]" />
 
-          {/* Navigasi Mobile */}
           <nav aria-label="Navigasi mobile">
             <ul className="grid gap-[14px]">
               {NAV_LINKS.map(({ label, href }) => (
