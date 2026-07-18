@@ -85,6 +85,7 @@ export default function ContactPage() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
+    </div>
   );
 }
