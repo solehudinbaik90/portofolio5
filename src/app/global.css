@@ -475,14 +475,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .bg-img {
-    background-image: url(../../public/assets/media/bg.d60e6873.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width: 100%;
-    min-height: 100vh;
-    position: fixed;
-    z-index: 0
+  background-image: url(../../public/assets/media/bg.d60e6873.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .pointer-events-none {
