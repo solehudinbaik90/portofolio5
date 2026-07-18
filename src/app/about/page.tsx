@@ -17,9 +17,11 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <>
-      <Header />
-      <main className="relative z-10">
+    <div className="min-h-screen bg-[#252525]">
+      <div className="bg-img" aria-hidden="true" />
+      <div className="relative z-10">
+        <Header />
+        <main>
         <section className="py-[30px] md:py-[80px]">
           <div className="container mx-auto">
             <div className="grid grid-cols-12 gap-[20px]">
