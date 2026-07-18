@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <>
-      <Header />
-      <main className="relative z-[99]">
+    <div className="min-h-screen bg-[#252525]">
+      <div className="bg-img" aria-hidden="true" />
+      <div className="relative z-10">
+        <Header />
+        <main>
         <section className="py-[30px] md:py-[80px]">
           <div className="container mx-auto">
 
