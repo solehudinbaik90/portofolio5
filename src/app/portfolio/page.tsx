@@ -95,6 +95,7 @@ export default function PortfolioPage() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
+    </div>
   );
 }
