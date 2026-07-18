@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <>
-      <div className="bg-img" />
-      <div className="relative z-[10] min-h-screen">
+    <div className="min-h-screen bg-[#252525]">
+      <div className="bg-img" aria-hidden="true" />
+      <div className="relative z-10">
         <Header />
-        <main className="relative z-[99]">
+        <main>
           <section className="py-[30px] md:py-[80px]">
             <div className="container mx-auto">
               <div className="grid grid-cols-12 gap-[30px]">
@@ -27,6 +27,6 @@ export default function HomePage() {
         </main>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
