@@ -39,7 +39,7 @@ export default function ProfileCard() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/msoleh19"
+              href="https://www.instagram.com/msoleh321"
               target="_blank"
               rel="noopener noreferrer"
             >
