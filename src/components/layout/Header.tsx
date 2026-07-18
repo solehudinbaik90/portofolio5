@@ -89,7 +89,7 @@ export default function Header() {
               <button
                 onClick={openMenu}
                 aria-label="Buka menu navigasi"
-                className="rounded-full border border-[#919295] p-[10px] text-[25px]"
+                className="rounded-full border border-[#919295] p-[10px] text-[25px] hover:bg-white/10 active:scale-90 transition-all"
               >
                 <svg
                   stroke="currentColor"
@@ -112,14 +112,17 @@ export default function Header() {
       </div>
 
       <div
-        className={`sidebar fixed left-[100%] top-0 z-[999] h-full w-full bg-btn/60 transition-all duration-500 ${
-          isMenuOpen ? "!left-0" : ""
+        className={`sidebar fixed inset-0 z-[999] bg-btn/60 transition-all duration-500 ${
+          isMenuOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
         onClick={closeMenu}
         aria-hidden={!isMenuOpen}
       >
         <div
-          className="ml-auto h-full min-h-[750px] w-[300px] bg-card px-[30px] pt-[60px] md:min-h-[700px]"
+          className={`ml-auto h-full min-h-[750px] w-[300px] bg-card px-[30px] pt-[60px] transition-transform duration-500 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+
           onClick={(e) => e.stopPropagation()}
           role="dialog"
           aria-label="Menu navigasi mobile"
