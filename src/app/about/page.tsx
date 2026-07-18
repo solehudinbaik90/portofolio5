@@ -19,7 +19,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main className="relative z-[99]">
+      <main className="relative z-10">
         <section className="py-[30px] md:py-[80px]">
           <div className="container mx-auto">
             <div className="grid grid-cols-12 gap-[20px]">
