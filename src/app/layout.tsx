@@ -3,6 +3,8 @@ import { Inter, Poppins } from "next/font/google";
 import AosInit from "@/components/ui/AosInit";
 import "./global.css";
 import "./aos.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const inter = Inter({
   subsets: ["latin"],
