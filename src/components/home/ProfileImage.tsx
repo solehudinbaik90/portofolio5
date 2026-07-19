@@ -30,13 +30,13 @@ export default function ProfileImage() {
         </div>
 
         <div
-          className="pulse bg-card absolute bottom-[-50px] right-[40px] flex items-center gap-[20px] rounded-full px-[40px] py-[18px] md:bottom-[-17px] lg:right-[-34px]"
+          className="pulse bg-card absolute bottom-[-40px] left-1/2 -translate-x-1/2 flex items-center gap-[20px] rounded-full px-[40px] py-[18px] md:bottom-[-20px] lg:bottom-[-30px]"
           data-aos="fade-up"
           data-aos-delay="350"
         >
           <svg
             viewBox="0 0 512 512"
-            className="text-theme h-[40px] w-[40px] fill-current"
+            className="h-[40px] w-[40px] fill-[rgb(255,1,79)] text-[rgb(255,1,79)]"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
           >
