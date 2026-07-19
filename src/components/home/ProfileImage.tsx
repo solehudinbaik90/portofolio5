@@ -40,7 +40,7 @@ export default function ProfileImage() {
                             fill="currentColor"
                             strokeWidth="0"
                             viewBox="0 0 512 512"
-                            className="text-theme text-[40px]"
+                            className="text-emerald-500 text-[40px] block"
                             height="1em"
                             width="1em"
                             xmlns="http://www.w3.org/2000/svg"
