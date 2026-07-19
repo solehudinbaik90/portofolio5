@@ -29,4 +29,11 @@ export const testimonials: Testimonial[] = [
     location: "Yogyakarta, Indonesia",
     avatar: "/assets/images/user/user-4.png",
   },
+  {
+    id: 5,
+    text: "Saya sangat bersyukur dapat bekerjasama dan ini merupakan suatu keberhasilan yang luar biasa yang saya dapatkan.",
+    name: "Surya Budikusuma",
+    location: "Tangerang, Indonesia",
+    avatar: "/assets/images/user/user-5.png",
+  },
 ];
