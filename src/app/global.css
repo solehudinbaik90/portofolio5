@@ -194,7 +194,7 @@ img,video {
     display: none
 }
 
-@import url("../../public/assets/css/font.css");
+@import url("/assets/css/font.css");
 * {
     margin: 0;
     padding: 0;
@@ -475,7 +475,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .bg-img {
-  background-image: url(../../public/assets/media/bg.d60e6873.png);
+  background-image: url(/assets/media/bg.d60e6873.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
