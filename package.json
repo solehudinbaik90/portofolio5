@@ -10,7 +10,8 @@
     "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "swiper": "^11.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
