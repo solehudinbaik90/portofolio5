@@ -37,7 +37,10 @@ export default function ProfileImage() {
                     <svg
                         viewBox="0 0 512 512"
                         className="text-theme h-[40px] w-[40px]"
-                        style={ { fill: "currentColor" }}
+                        fill="currentColor"
+                        strokeWidth="0"
+                        height="1em"
+                        width="1em"
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
                         >
