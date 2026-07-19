@@ -5,6 +5,8 @@ import Footer from "@/components/layout/Footer";
 import SectionBadge from "@/components/ui/SectionBadge";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
+import TestimonialSwiper from "@/components/ui/TestimonialSwiper";
+
 
 export const metadata: Metadata = {
   title: "Layanan",
@@ -82,33 +84,9 @@ export default function ServicePage() {
               <h2 className="text-[32px] font-semibold" data-aos="fade-up" data-aos-delay="50">
                 Kata Mereka:
               </h2>
-              <div
-                className="mt-[30px] grid gap-[30px] md:grid-cols-2 lg:grid-cols-3"
-                data-aos="fade-up"
-                data-aos-delay="150"
-              >
-                {testimonials.map((item) => (
-                  <div
-                    key={item.id}
-                    className="divide-y divide-dashed divide-theme rounded-xl bg-card px-[30px] py-[40px]"
-                  >
-                    <p className="pb-[30px] text-[18px] italic text-text">
-                      &quot;{item.text}&quot;
-                    </p>
-                    <div className="flex items-center gap-4 pt-[30px]">
-                      <div className="inline-block w-[80px] overflow-hidden rounded-full">
-                        <Image src={item.avatar} alt={item.name} />
-                      </div>
-                      <div className="grid gap-[10px]">
-                        <p className="text-base font-semibold text-white lg:text-[20px]">
-                          {item.name}
-                        </p>
-                        <p className="text-text">{item.location}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <div className="mt-[30px]" data-aos="fade-up" data-aos-delay="150">
+                  <TestimonialSwiper testimonials={testimonials} />
+             </div>
             </div>
 
           </div>
