@@ -3,54 +3,54 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(inter/gaya8.ttf) format('truetype');
+  src: url(/assets/css/inter/gaya8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(inter/gaya7.ttf) format('truetype');
+  src: url(/assets/css/inter/gaya7.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(inter/gaya6.ttf) format('truetype');
+  src: url(/assets/css/inter/gaya6.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(inter/gaya5.ttf) format('truetype');
+  src: url(/assets/css/inter/gaya5.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(poppins/gaya4.ttf) format('truetype');
+  src: url(/assets/css/poppins/gaya4.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(poppins/gaya3.ttf) format('truetype');
+  src: url(/assets/css/poppins/gaya3.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(poppins/gaya2.ttf) format('truetype');
+  src: url(/assets/css/poppins/gaya2.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(poppins/gaya1.ttf) format('truetype');
+  src: url(/assets/css/poppins/gaya1.ttf) format('truetype');
 }
