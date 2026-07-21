@@ -36,7 +36,8 @@ export default function ProfileImage() {
                 >
                     <svg
                         viewBox="0 0 512 512"
-                        className="text-theme h-[40px] w-[40px] fill-current"
+                        fill="currentColor"
+                        className="text-theme h-[40px] w-[40px]"
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
                         >
