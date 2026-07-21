@@ -34,7 +34,7 @@ export default function ProfileImage() {
                     flex items-center justify-center gap-[20px]
                     rounded-[28px]
                     px-[24px] py-[12px]
-                    w-[90%] max-w-[520px]
+                    w-[90%] max-w-[700px]
                     md:bottom-[-17px] md:px-[30px]
                     lg:bottom-[-20px] lg:px-[40px]
                     "
