@@ -31,9 +31,13 @@ export default function ProfileImage() {
 
                 <div
                     className="pulse bg-card absolute left-1/2 bottom-[-50px] transform -translate-x-1/2 z-20
-                    flex items-center justify-center gap-[20px] rounded-full
-                    px-[24px] py-[12px] w-[90%] max-w-[520px]
-                    md:bottom-[-17px] md:px-[30px] lg:bottom-[-20px] lg:px-[40px]"
+                    flex items-center justify-center gap-[20px]
+                    rounded-[28px]
+                    px-[24px] py-[12px]
+                    w-[90%] max-w-[520px]
+                    md:bottom-[-17px] md:px-[30px]
+                    lg:bottom-[-20px] lg:px-[40px]
+                    "
                     data-aos="fade-up"
                     data-aos-delay="350"
                 >
