@@ -363,6 +363,11 @@ summary {
   outline-offset: 2px;
 }
 
+.inputBox:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .dark .inputBox {
   border-color: var(--theme-btn);
 }
@@ -621,7 +626,7 @@ summary {
 }
 
 /* ============================================
-   MISCELLANEOUS
+   SCROLLBAR & SIDEBAR
    ============================================ */
 .scrollbar-hidden,
 .sidebar {
@@ -637,6 +642,9 @@ summary {
   display: none;
 }
 
+/* ============================================
+   UTILITIES
+   ============================================ */
 .recharts-layer {
   color: var(--theme-text);
 }
@@ -649,7 +657,7 @@ summary {
 }
 
 /* ============================================
-   FONTS
+   FONTS - SWIPER ICONS
    ============================================ */
 @font-face {
   font-family: swiper-icons;
